@@ -136,7 +136,7 @@ print('Intercept: ', intercept_2)
 X_test_2 = X_test[:, 1]
 plt.scatter(X_test_2, y_test,  color='blue')
 plt.plot(X_test_2, coef_2[0] * X_test_2 + intercept_2 , '-r')
-plt.xlabel("combined Fuel Consumption (MPG)")
+plt.xlabel("Combined Fuel Consumption (MPG)")
 plt.ylabel("CO2 Emission")
 plt.show()
 

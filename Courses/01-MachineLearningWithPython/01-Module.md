@@ -99,8 +99,3 @@
 
 ---
 
-### 🗂 Organizarea proiectelor
-
-- Fiecare proiect are un folder dedicat (`01-Linear-Regression`)
-- Folosim `README.md` pentru notițe
-- Structură profesională pentru scalabilitate
