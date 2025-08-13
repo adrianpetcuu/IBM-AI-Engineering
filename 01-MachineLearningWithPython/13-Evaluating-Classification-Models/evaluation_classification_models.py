@@ -137,15 +137,15 @@ print(classification_report(y_train, y_pred_train_svm))
 
 # Plot the confusion matrices for the training data
 conf_matrix_knn = confusion_matrix(y_train, y_pred_train_knn)
-conf_matrix_svm = conf_matrix_svm(y_train, y_pred_train_svm)
-fig, axes = plt.subplot(1, 2, fig_size=(12, 5))
+conf_matrix_svm = confusion_matrix(y_train, y_pred_train_svm)
+fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 
 sns.heatmap(conf_matrix_knn, annot=True, cmap='Blues', fmt='d', ax=axes[0], xticklabels=labels, yticklabels=labels)
 axes[0].set_title('KNN Training Confusion Matrix')
 axes[0].set_xlabel('Predicted')
 axes[0].set_ylabel('Actual')
 
-sns.heatmap(conf_matrix_svm, anoot=True, cmap='Blues', fmt='d', ax=axes[0], xticklabels=labels, yticklabels=labels)
+sns.heatmap(conf_matrix_svm, annot=True, cmap='Blues', fmt='d', ax=axes[1], xticklabels=labels, yticklabels=labels)
 axes[1].set_title('SVM Training Confusion Matrix')
 axes[1].set_xlabel('Predicted')
 axes[1].set_ylabel('Actual')
