@@ -84,3 +84,4 @@ print(kmeans.labels_)
 
 # Obținem coordonatele centroidelor
 print(kmeans.cluster_centers_)
+```
